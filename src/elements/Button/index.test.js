@@ -22,12 +22,12 @@ test("Should render <a> tag", () => {
   expect(container.querySelector("a")).toBeInTheDocument();
 });
 
-// test("Should render <link> component", () => {
-//   const { container } = render(
-//     <Router>
-//       <Button type="link"></Button>
-//     </Router>
-//   );
+test("Should render <link> component", () => {
+  const { container } = render(
+    <Router>
+      <Button type="link"></Button>
+    </Router>
+  );
 
-//   expect(container.querySelector("a")).toBeInTheDocument();
-// });
+  expect(container.querySelector("a")).toBeInTheDocument();
+});
